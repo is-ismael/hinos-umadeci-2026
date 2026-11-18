@@ -321,6 +321,16 @@
   main.addEventListener("toggle", function (e) {
     var el = e.target;
     if (!el.open) return;
+    /* estatística: registra qual hino foi aberto (GoatCounter) */
+    try {
+      if (window.goatcounter && window.goatcounter.count && HINOS[el.id]) {
+        window.goatcounter.count({
+          path: "hino/" + el.id,
+          title: HINOS[el.id].partes.map(function (p) { return p.titulo; }).join(" + "),
+          event: true
+        });
+      }
+    } catch (err) {}
     main.querySelectorAll("details.hino[open]").forEach(function (o) { if (o !== el) o.open = false; });
     setTimeout(function () { el.scrollIntoView({ behavior: "smooth", block: "start" }); }, 30);
   }, true);
@@ -352,5 +362,7 @@
   };
 })();
 </script>
+<!-- Estatísticas de acesso: painel em https://ismael.goatcounter.com -->
+<script data-goatcounter="https://ismael.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
