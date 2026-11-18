@@ -725,9 +725,9 @@ E o louvor ao Rei Jesus
 [Todos]
 
 [Em vozes]
-A honra (a honra)
-A glória (a glória)
-A força (a força)
+A honra (*a honra*)
+A glória (*a glória*)
+A força (*a força*)
 E o poder ao Rei Jesus
 E o louvor ao Rei Jesus
 `,
@@ -889,7 +889,6 @@ Ele ressuscitou
 *Em Ti, eu sei que encontro solução*
 *Também podes me dar a direção*
 
-[Sopranos · uníssono]
 Em Ti, eu sei que estou seguro
 Pois já estás no meu futuro
 E Tu já sabes bem o que fazer
@@ -898,7 +897,6 @@ E Tu já sabes bem o que fazer
 *Mas se acaso Teu silêncio me alcançar*
 *E resolveres Te calar para provar a minha fé*
 
-[Sopranos · uníssono]
 Te adorarei independente do que for
 Pois Tu és Deus, Tu és Senhor
 E fazes o que Te apraz
@@ -911,7 +909,6 @@ E fazes o que Te apraz
 *Na prova, no fogo, no vale, no monte*
 *Em meio ao deserto, ou perto da fonte*
 
-[Sopranos · uníssono]
 Eu só posso mesmo é Te adorar!
 
 [Sopranos fazem vocal]
@@ -919,7 +916,6 @@ Eu só posso mesmo é Te adorar!
 *Te adorarei* (Te adorarei, Senhor)
 *Independente do que for*
 
-[Sopranos · uníssono]
 Te adorarei
 
 [Sopranos fazem vocal]
@@ -927,7 +923,6 @@ Te adorarei
 *Te adorarei* (Te adorarei, Senhor)
 *Independente do que for*
 
-[Sopranos · uníssono]
 Te adorarei
 
 *Grande, justo, lindo, santo*
@@ -938,7 +933,6 @@ Te adorarei
 [Sopranos fazem vocal]
 *Ele tem, Ele é, Ele faz, Ele sabe*
 
-[Sopranos · uníssono]
 E eu só sei dizer que independente do que for
 Te adorarei
 
@@ -953,7 +947,6 @@ Em meio ao deserto, ou perto da fonte
 
 [⬆ Sobe o tom]
 
-[Sopranos · uníssono]
 Grande, justo, lindo, santo
 Forte, torre, rocha, vida
 Manda, pode, cura, livra
@@ -962,7 +955,6 @@ Salva, usa, ressuscita
 [Sopranos fazem vocal]
 *Ele tem, Ele é, Ele faz, Ele sabe*
 
-[Sopranos · uníssono]
 E eu só sei dizer que independente do que for
 
 [Sopranos fazem vocal]
@@ -970,13 +962,11 @@ E eu só sei dizer que independente do que for
 *Te adorarei* (Te adorarei, Senhor)
 *Independente do que for*
 
-[Sopranos · uníssono]
 Te adorarei
 
 *Te adorarei* (Eu Te adorarei)
 *Eu Te adorarei*
 
-[Sopranos · uníssono]
 Independente do que for, Te adorarei
 `,
     }],
