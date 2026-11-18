@@ -35,7 +35,7 @@ const SOLISTAS = {
   "Masculino":    "#1c7ed6",
   "Solo":         "#c92a2a",
   "Solo 1":       "#c92a2a",
-  "Solo 2":       "#2b8a3e",
+  "Sara":         "#2b8a3e",
   "Mulheres":     "#ae3ec9",
   "Homens":       "#1c7ed6",
 };
@@ -235,7 +235,7 @@ Na cidade, cidade de Luz
 
 [Solista: Carolina]
 João viu os santos louvando ao Senhor
-*(Digno é o Cordeiro de honra e louvor)*
+(*Digno é o Cordeiro*) de honra e louvor
 Não viu mais noite, nem escuridão
 (*Pois o próprio Mestre*) ilumina Sião
 
@@ -596,7 +596,7 @@ Quem é Ele?
 Quem é Ele?
 [Todos]
 
-[Grupo: Solo 2]
+[Solo: Sara]
 Quem é Ele?
 Ao som da Sua voz, Ele faz surdo ouvir
 Quem é Ele?
@@ -710,7 +710,11 @@ E agradecer-Te por Tua obra em nossa vida
 Confiamos em Teu infinito amor
 Pois só Tu és o Deus eterno
 Sobre toda terra e céus
-
+`,
+      },
+      {
+        titulo: "Consagração",
+        letra: `
 [Solo: Adrieli]
 A honra
 A glória
@@ -725,20 +729,8 @@ A glória (a glória)
 A força (a força)
 E o poder ao Rei Jesus
 E o louvor ao Rei Jesus
-
-[Em vozes]
-Porque Ele vive, posso crer no amanhã
-Porque Ele vive, temor não há
-Mas eu bem sei, eu sei que a minha vida
-Está nas mãos do meu Jesus, que vivo está
-
-Porque Ele vive, posso crer no amanhã
-Porque Ele vive, temor não há
-Mas eu bem sei, eu sei que a minha vida
-Está nas mãos do meu Jesus, que vivo está
 `,
       },
-      { titulo: "Consagração", letra: "" },
     ],
   },
 
@@ -754,7 +746,6 @@ Está nas mãos do meu Jesus, que vivo está
       letra: `
 [Introdução · 8 compassos]
 
-[Grupo: Solo 1]
 O Rei da glória
 Se despiu da majestade e se assentou
 Com pecadores
@@ -764,16 +755,13 @@ Que Seus olhos viram o universo sendo feito?
 Quem acreditaria
 Que o Seu cetro já regeu o tempo?
 
-Homem tão simples (vocal: ah…)
-Sem ter lugar ou onde repousar (vocal: ah…)
-
+Homem tão simplesSem ter lugar ou onde repousar
 Na estrebaria
 Não é o melhor lugar pra estrear
 Quem notaria
 Que Sua voz chamou o mundo à existência?
 E aquelas mãos
 Moldou o homem à Sua semelhança?
-[Todos]
 
 [Uníssono]
 Como um cordeiro mudo, foi levado ao matadouro
@@ -783,8 +771,7 @@ Não tinha manchas, no Calvário, não reclamou
 
 Foi maltratado e humilhado o Cordeiro de Deus
 Mas foi fiel até o fim
-Que tira o pecado do mundo (vocal: ah…)
-Revela a eternidade e Sua glória em mim
+Que tira o pecado do mundoRevela a eternidade e Sua glória em mim
 
 [Todos · uníssono]
 Mas como leão rugirá
@@ -816,9 +803,7 @@ Não tinha manchas, no Calvário, não reclamou
 
 Foi maltratado e humilhado o Cordeiro de Deus
 Mas foi fiel até o fim
-Que tira o pecado do mundo (vocal: ah…)
-Revela a eternidade (vocal: ah…)
-E Sua glória em mim, oh, oh
+Que tira o pecado do mundoRevela a eternidadeE Sua glória em mim, oh, oh
 
 [Em vozes]
 Mas como leão rugirá
