@@ -32,6 +32,7 @@ const SOLISTAS = {
   "Júlia":        "#9c36b5",
   "Tayná":        "#c2255c",
   "Adrieli":      "#2f9e44",
+  "Larissa Dias": "#0c8599",
   "Masculino":    "#1c7ed6",
   "Solo":         "#c92a2a",
   "Solo 1":       "#c92a2a",
@@ -876,61 +877,106 @@ Ele ressuscitou
   "te-adorarei": {
     partes: [{
       titulo: "Te Adorarei",
+      solo: "Larissa Dias",
       letra: `
-Contigo eu sei que posso ir além
-Contigo eu não temo a ninguém
-Contigo eu salto uma muralha
-Contigo eu venço uma batalha
-Contigo eu sei que venço o inimigo
+*Contigo eu sei que posso ir além*
+*Contigo eu não temo a ninguém*
+*Contigo eu salto uma muralha*
+*Contigo eu venço uma batalha*
+*Contigo eu sei que venço o inimigo*
 
-Em Ti, eu sei que encontro solução
-Também podes me dar a direção
+[Sopranos fazem vocal]
+*Em Ti, eu sei que encontro solução*
+*Também podes me dar a direção*
+
+[Sopranos · uníssono]
 Em Ti, eu sei que estou seguro
 Pois já estás no meu futuro
 E Tu já sabes bem o que fazer
 
-Mas se acaso Teu silêncio me alcançar
-E resolveres Te calar para provar a minha fé
+[Sopranos fazem vocal]
+*Mas se acaso Teu silêncio me alcançar*
+*E resolveres Te calar para provar a minha fé*
+
+[Sopranos · uníssono]
 Te adorarei independente do que for
 Pois Tu és Deus, Tu és Senhor
 E fazes o que Te apraz
 
+[Sopranos fazem vocal]
+*Eu Te adorarei no mar* (Eu Te adorarei)
+*No vento ou temporal* (Te adorarei)
+*Te adorarei na tempestade, ou na bonança*
+
+*Na prova, no fogo, no vale, no monte*
+*Em meio ao deserto, ou perto da fonte*
+
+[Sopranos · uníssono]
+Eu só posso mesmo é Te adorar!
+
+[Sopranos fazem vocal]
+*Te adorarei* (Eu Te adorarei)
+*Te adorarei* (Te adorarei, Senhor)
+*Independente do que for*
+
+[Sopranos · uníssono]
+Te adorarei
+
+[Sopranos fazem vocal]
+*Te adorarei* (Eu Te adorarei)
+*Te adorarei* (Te adorarei, Senhor)
+*Independente do que for*
+
+[Sopranos · uníssono]
+Te adorarei
+
+*Grande, justo, lindo, santo*
+*Forte, torre, rocha, vida*
+*Manda, pode, cura, livra*
+*Salva, usa, ressuscita*
+
+[Sopranos fazem vocal]
+*Ele tem, Ele é, Ele faz, Ele sabe*
+
+[Sopranos · uníssono]
+E eu só sei dizer que independente do que for
+Te adorarei
+
+[Todos · uníssono]
 Eu Te adorarei no mar, no vento ou temporal
 Te adorarei na tempestade, ou na bonança
 Na prova, no fogo, no vale, no monte
 Em meio ao deserto, ou perto da fonte
-Eu só posso mesmo é Te adorar!
 
-Te adorarei, Te adorarei
-Independente do que for, Te adorarei
-Te adorarei, Te adorarei
-Independente do que for, Te adorarei
+[Sopranos fazem vocal]
+*Eu só posso mesmo é Te adorar!*
 
+[⬆ Sobe o tom]
+
+[Sopranos · uníssono]
 Grande, justo, lindo, santo
 Forte, torre, rocha, vida
 Manda, pode, cura, livra
 Salva, usa, ressuscita
-Ele tem, Ele é, Ele faz, Ele sabe
+
+[Sopranos fazem vocal]
+*Ele tem, Ele é, Ele faz, Ele sabe*
+
+[Sopranos · uníssono]
 E eu só sei dizer que independente do que for
+
+[Sopranos fazem vocal]
+*Te adorarei* (Eu Te adorarei)
+*Te adorarei* (Te adorarei, Senhor)
+*Independente do que for*
+
+[Sopranos · uníssono]
 Te adorarei
 
-Eu Te adorarei no mar, no vento ou temporal
-Te adorarei na tempestade, ou na bonança
-Na prova, no fogo, no vale, no monte
-Em meio ao deserto, ou perto da fonte
-Eu só posso mesmo é Te adorar!
+*Te adorarei* (Eu Te adorarei)
+*Eu Te adorarei*
 
-Grande, justo, lindo, santo
-Forte, torre, rocha, vida
-Manda, pode, cura, livra
-Salva, usa, ressuscita
-Ele tem, Ele é, Ele faz, Ele sabe
-E eu só sei dizer que independente do que for
-Te adorarei
-
-Te adorarei, Te adorarei
-Independente do que for, Te adorarei
-Te adorarei, Te adorarei
+[Sopranos · uníssono]
 Independente do que for, Te adorarei
 `,
     }],

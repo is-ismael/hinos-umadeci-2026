@@ -124,6 +124,7 @@
   .solo-tag::before { content: "♪ "; }
   .tags { display: flex; flex-wrap: wrap; gap: 0 12px; }
   .inl { color: var(--c); font-weight: 650; }
+  .eco { color: var(--ink); font-weight: 400; }
   .nota {
     display: block; font-size: .72rem; font-weight: 700; letter-spacing: .06em;
     text-transform: uppercase; color: var(--muted); margin-bottom: 2px;
@@ -222,10 +223,18 @@
 
   function htmlLinha(l) {
     return '<span class="linha">' + l.segs.map(function (s) {
-      return s.c && l.cantor === undefined
+      if (l.cantor !== undefined) return esc(s.t);
+      return s.c
         ? '<span class="inl" style="--c:' + cor(s.c) + '">' + esc(s.t) + "</span>"
-        : esc(s.t);
+        : '<span class="eco">' + esc(s.t) + "</span>";
     }).join("") + "</span>";
+  }
+
+  /* solista de uma linha mista (só se houver uma pessoa nela) */
+  function soloMisto(l) {
+    var nomes = [];
+    l.segs.forEach(function (s) { if (s.c && nomes.indexOf(s.c) < 0) nomes.push(s.c); });
+    return nomes.length === 1 ? nomes[0] : null;
   }
 
   function htmlEstrofe(linhas) {
@@ -236,14 +245,22 @@
         if (s.c && inline.indexOf(s.c) < 0) inline.push(s.c);
       });
     });
+    /* linha mista entra no bloco de solo da pessoa se a estrofe tiver linha inteira dela */
+    function dono(l) {
+      if (l.cantor !== undefined) return l.cantor;
+      var n = soloMisto(l);
+      return n && linhas.some(function (o) { return o.cantor === n; }) ? n : undefined;
+    }
     function chave(l) {
-      return l.nota ? "nota" : l.cantor === undefined ? "misto" : l.cantor === null ? "todos" : "s:" + l.cantor;
+      if (l.nota) return "nota";
+      var d = dono(l);
+      return d === undefined ? "misto" : d === null ? "todos" : "s:" + d;
     }
     function fechar() {
       if (!grupo) return;
       var ls = grupo.linhas.map(htmlLinha).join("");
       if (grupo.k.indexOf("s:") === 0) {
-        var nome = grupo.linhas[0].cantor;
+        var nome = grupo.k.slice(2);
         out += '<div class="solo" style="--c:' + cor(nome) + '">' + tag(nome) + ls + "</div>";
       } else out += ls;
       grupo = null;
