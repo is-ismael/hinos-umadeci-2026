@@ -698,6 +698,15 @@ Pois só Tu és o Deus eterno
 Sobre toda terra e céus, Jesus
 [Todos]
 
+Grande é o Senhor e muito digno de louvor
+Na cidade do nosso Deus, Seu santo monte
+Alegria de toda a terra
+Oh, aleluia, Ele é grande
+Grande é o Senhor em quem nós temos a vitória
+Que nos ajuda contra o inimigo
+Por isso diante Dele nos prostramos
+Aleluia
+
 [Uníssono]
 Queremos o Teu nome engrandecer
 E agradecer-Te por Tua obra em nossa vida
@@ -725,9 +734,15 @@ E o louvor ao Rei Jesus
 [Todos]
 
 [Em vozes]
-A honra (*a honra*)
-A glória (*a glória*)
-A força (*a força*)
+A honra
+A glória
+A força
+E o poder ao Rei Jesus
+E o louvor ao Rei Jesus
+
+A honra
+A glória
+A força
 E o poder ao Rei Jesus
 E o louvor ao Rei Jesus
 `,
@@ -885,7 +900,6 @@ Ele ressuscitou
 *Contigo eu venço uma batalha*
 *Contigo eu sei que venço o inimigo*
 
-[Sopranos fazem vocal]
 *Em Ti, eu sei que encontro solução*
 *Também podes me dar a direção*
 
@@ -893,7 +907,6 @@ Em Ti, eu sei que estou seguro
 Pois já estás no meu futuro
 E Tu já sabes bem o que fazer
 
-[Sopranos fazem vocal]
 *Mas se acaso Teu silêncio me alcançar*
 *E resolveres Te calar para provar a minha fé*
 
@@ -901,7 +914,6 @@ Te adorarei independente do que for
 Pois Tu és Deus, Tu és Senhor
 E fazes o que Te apraz
 
-[Sopranos fazem vocal]
 *Eu Te adorarei no mar* (Eu Te adorarei)
 *No vento ou temporal* (Te adorarei)
 *Te adorarei na tempestade, ou na bonança*
@@ -911,14 +923,12 @@ E fazes o que Te apraz
 
 Eu só posso mesmo é Te adorar!
 
-[Sopranos fazem vocal]
 *Te adorarei* (Eu Te adorarei)
 *Te adorarei* (Te adorarei, Senhor)
 *Independente do que for*
 
 Te adorarei
 
-[Sopranos fazem vocal]
 *Te adorarei* (Eu Te adorarei)
 *Te adorarei* (Te adorarei, Senhor)
 *Independente do que for*
@@ -930,7 +940,6 @@ Te adorarei
 *Manda, pode, cura, livra*
 *Salva, usa, ressuscita*
 
-[Sopranos fazem vocal]
 *Ele tem, Ele é, Ele faz, Ele sabe*
 
 E eu só sei dizer que independente do que for
@@ -942,7 +951,6 @@ Te adorarei na tempestade, ou na bonança
 Na prova, no fogo, no vale, no monte
 Em meio ao deserto, ou perto da fonte
 
-[Sopranos fazem vocal]
 *Eu só posso mesmo é Te adorar!*
 
 [⬆ Sobe o tom]
@@ -952,12 +960,10 @@ Forte, torre, rocha, vida
 Manda, pode, cura, livra
 Salva, usa, ressuscita
 
-[Sopranos fazem vocal]
 *Ele tem, Ele é, Ele faz, Ele sabe*
 
 E eu só sei dizer que independente do que for
 
-[Sopranos fazem vocal]
 *Te adorarei* (Eu Te adorarei)
 *Te adorarei* (Te adorarei, Senhor)
 *Independente do que for*
