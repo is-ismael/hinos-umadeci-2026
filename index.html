@@ -201,9 +201,11 @@
     (texto || "").split("\n").forEach(function (raw) {
       var l = raw.trim(), m;
       if (!l) { if (atual.length) estrofes.push(atual); atual = []; return; }
-      if ((m = l.match(/^\[\s*(solo|grupo)\s*:\s*(.+?)\s*\]$/i))) {
-        bloco = atualSolista = m[2];
-        TIPO[m[2]] = m[1].toLowerCase();
+      if ((m = l.match(/^\[\s*(solo|grupo|solista)\s*:\s*(.+?)\s*\]$/i))) {
+        var tipo = m[1].toLowerCase();
+        atualSolista = m[2];
+        if (tipo !== "solista") bloco = m[2]; /* [Solista: X] só troca de quem são os *asteriscos* */
+        TIPO[m[2]] = tipo === "grupo" ? "grupo" : "solo";
         return;
       }
       if (/^\[\s*todos\s*\]$/i.test(l)) { bloco = null; return; }
@@ -252,6 +254,10 @@
       grupo.linhas.push(l);
     });
     fechar();
+    /* se a pessoa já tem etiqueta numa linha inteira de solo nesta estrofe, não repete */
+    inline = inline.filter(function (n) {
+      return !linhas.some(function (l) { return l.cantor === n; });
+    });
     var topo = inline.length ? '<div class="tags">' + inline.map(tag).join("") + "</div>" : "";
     return '<div class="estrofe">' + topo + out + "</div>";
   }

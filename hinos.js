@@ -14,6 +14,8 @@
          linhas do solo...
          [Todos]
      (depois do [Todos], os *asteriscos* continuam sendo dessa pessoa)
+   - Trocar de quem são os *asteriscos* no meio do hino, sem colorir
+     a estrofe inteira:  [Solista: Nome da Pessoa]
    - Grupo que não é solo (ex.: só as mulheres):
          [Grupo: Mulheres]  ...  [Todos]
    - Qualquer outra coisa entre [colchetes] vira uma indicação
@@ -26,7 +28,10 @@ const SOLISTAS = {
   "Ana Lídia":    "#d6336c",
   "Maria Luiza":  "#0f8a7e",
   "Gabriela":     "#d9480f",
-  "Feminino":     "#ae3ec9",
+  "Carolina":     "#1c7ed6",
+  "Júlia":        "#9c36b5",
+  "Tayná":        "#c2255c",
+  "Adrieli":      "#2f9e44",
   "Masculino":    "#1c7ed6",
   "Solo":         "#c92a2a",
   "Solo 1":       "#c92a2a",
@@ -68,11 +73,140 @@ const PROGRAMACAO = [
 /* Hinos. Medley = mais de uma parte. */
 const HINOS = {
   "um-novo-dia": {
-    partes: [{ titulo: "Um Novo Dia", letra: "" }],
+    partes: [{
+      titulo: "Um Novo Dia",
+      letra: `
+Pela graça estou sendo curado
+Pouco a pouco sendo transformado
+Perfeito não sou, contudo, sou grato
+
+Tenho lutas, mas eu não desisto
+Com coragem, sigo vencendo
+Perfeito não sou, contudo, sou grato
+
+Novo dia recebi
+Pra Te amar, ó Deus
+E me trouxe até aqui
+Para testemunhar
+O que posso dizer
+Senão aleluia?
+
+Sou grato, Cristo
+Sou grato, Cristo
+Sou grato, Cristo
+Novo dia recebi, recebi
+
+Quando a noite se aproximava
+Quase sem esperança eu estava
+Minha mão segurou, por isso sou grato
+
+Quando no fogo eu fui lançado
+El Shaddai, estava ao meu lado
+Nunca me deixou, por isso sou grato
+
+Novo dia recebi
+Pra Te amar, ó Deus
+E me trouxe até aqui
+Para testemunhar
+O que posso dizer
+Senão aleluia?
+
+Sou grato, Cristo
+Sou grato, Cristo
+Sou grato, Cristo
+Novo dia recebi, recebi
+Recebi, recebi
+
+Meu Senhor, eu só quero adorá-Lo
+Tu és tudo, és tudo, és tudo para mim
+Meu Senhor, eu só quero adorá-Lo
+Tu és tudo, és tudo, és tudo para mim
+
+Meu Senhor, eu só quero adorá-Lo
+Tu és tudo, és tudo, és tudo
+Meu Senhor, eu só quero adorá-Lo
+Tu és tudo, és tudo, és tudo para mim, oh
+
+Meu Senhor, eu só quero adorá-Lo
+Tu és tudo, és tudo, és tudo para mim
+Meu Senhor, eu só quero adorá-Lo
+Tu és tudo, és tudo, és tudo para mim
+
+Meu Senhor, eu só quero adorá-Lo
+Tu és tudo, és tudo, és tudo
+Meu Senhor, eu só quero adorá-Lo
+Tu és tudo, és tudo, és tudo para mim
+
+Novo dia recebi
+Pra Te amar, ó Deus
+E me trouxe até aqui
+Para testemunhar
+O que posso dizer
+Senão aleluia?
+
+Sou grato, Cristo
+Sou grato, Cristo
+Sou grato, Cristo
+Novo dia recebi, recebi
+Recebi, recebi
+`,
+    }],
   },
 
   "gratidao": {
-    partes: [{ titulo: "Gratidão", letra: "" }],
+    partes: [{
+      titulo: "Gratidão",
+      letra: `
+Nada novo achei pra dizer, então
+Como expressar minha gratidão?
+Posso até cantar alguma canção
+Que vai acabar, mas a Sua não
+
+Então, vou levantar as minhas mãos e louvar
+Pois tudo o que tenho é um aleluia, aleluia
+
+Sei que é simples pra um Rei
+Mas não tenho nada além
+De um coração cantando aleluia, aleluia
+
+Em resposta a Ti há uma ação
+Me render aqui em adoração
+
+Então, vou levantar as minhas mãos e louvar
+Pois tudo o que tenho é um aleluia, aleluia
+
+Sei que é simples pra um Rei
+Mas não tenho nada além
+De um coração cantando aleluia, aleluia
+
+Ei, meu coração
+Não se envergonhe, cante essa canção
+Pois sei que há fôlego nesses pulmões
+Vamos, louve ao Senhor
+
+Ei, meu coração
+Não se envergonhe, cante essa canção
+Pois sei que há fôlego nesses pulmões
+Vamos, louve ao Senhor
+
+Ei, meu coração
+Não se envergonhe, cante essa canção
+Pois sei que há fôlego nesses pulmões
+Vamos, louve ao Senhor
+
+Ei, meu coração
+Não se envergonhe, cante essa canção
+Pois sei que há fôlego nesses pulmões
+Vamos, louve ao Senhor
+
+Então, vou levantar as minhas mãos e louvar
+Pois tudo o que tenho é um aleluia, aleluia
+
+Sei que é simples pra um Rei
+Mas não tenho nada além
+De um coração cantando aleluia, aleluia
+`,
+    }],
   },
 
   "jerusalem-dias-de-elias": {
@@ -97,15 +231,16 @@ Irei abraçar o meu Mestre Jesus
 
 Jerusalém!
 Vou descansar às margens do rio
-Na cidade, cidade de luz
+Na cidade, cidade de Luz
 
+[Solista: Carolina]
 João viu os santos louvando ao Senhor
-(Digno é o Cordeiro) de honra e louvor
+*(Digno é o Cordeiro de honra e louvor)*
 Não viu mais noite, nem escuridão
-(Pois o próprio Mestre) ilumina Sião
+(*Pois o próprio Mestre*) ilumina Sião
 
 Perto está o dia em que subirei
-(E no lar de paz), eu morarei
+(*E no lar de paz*), eu morarei
 Eu quero ir pra este lugar
 Jerusalém!
 
@@ -115,7 +250,7 @@ Irei abraçar o meu Mestre Jesus
 
 Jerusalém!
 Vou descansar às margens do rio
-Na cidade, cidade de luz
+Na cidade, cidade de Luz
 
 Jerusalém!
 Jerusalém!
@@ -123,7 +258,9 @@ Cantai, oh, Santa Grei
 
 Hosana nas alturas
 Hosana pra sempre!
+[Solo: Júlia]
 Pra sempre!
+[Todos]
 
 Jerusalém!
 Vou caminhar nas ruas de ouro
@@ -131,7 +268,7 @@ Irei abraçar o meu Mestre Jesus
 
 Jerusalém!
 Vou descansar às margens do rio
-Na cidade, cidade de luz
+Na cidade, cidade de Luz
 
 Morada de Deus, Jerusalém
 Cidade de luz, Jerusalém!
@@ -164,7 +301,7 @@ E um grande coral cantando uma canção
 Dizendo que já vem a salvação
 
 E um grande coral cantando uma canção
-Dizendo que já vem a salvação
+Dizendo que já vem a sal...vação
 `,
       },
     ],
@@ -294,7 +431,7 @@ Nele confiarei
 Fraco sou, mas Deus me dá
 Seu poder, Seu amor
 
-[Solo: Feminino]
+[Solo: Tayná]
 Jesus, meu guia é
 Amigo e protetor
 Ele é o meu bom Pastor
@@ -338,8 +475,107 @@ Seu poder, Seu amor
 
   "abraco-do-noivo-o-rei-esta-voltando": {
     partes: [
-      { titulo: "Abraço do Noivo", letra: "" },
-      { titulo: "O Rei Está Voltando", letra: "" },
+      {
+        titulo: "Abraço do Noivo",
+        solo: "Júlia",
+        letra: `
+Quantas vezes na Terra
+Afligida e humilhada, a noiva sofreu?
+Calada, foi aprisionada
+E jamais desistiu
+
+Cada lágrima da igreja, o Noivo colhia
+E esse cuidado cada vez mais crescia
+E a noiva sabia
+Que o encontro dos séculos aconteceria
+
+*E o Noivo no céu, contemplando o paraíso*
+*Pra encontrar sua noiva e lhe dar o infinito*
+*E do céu, está a olhar*
+Ele vê sua noiva, insistente e fiel
+Guerreira nas batalhas para estar lá no céu
+*Que não para de clamar*
+*E não cessa de dizer: Ora vem, Senhor Jesus*
+
+E a igreja, noiva amada, subirá
+Pra seu Noivo encontrar
+E eternamente O adorar, adorar
+
+*E eu verei os Seus lábios se abrirem*
+*Para pronunciar meu novo nome* (nome)
+*E eu irei, e correrei,* e O abraçarei
+E O abraçarei
+
+A noiva amada, adornada para o Noivo
+No Santo dos santos, adorando com os anjos
+Vai trocar as lágrimas pelo galardão
+Igreja amada em Seu coração
+
+O inferno e a Terra estremecerão
+Ao som da trombeta e a igreja subirá
+Vai romper o infinito e abraçar a Jesus
+Vai receber coroa em troca da cruz
+Para sempre, para sempre
+
+E nada jamais quebrará a aliança
+Para sempre a igreja é santa
+Para adorar o Rei, o meu Rei
+
+O Altíssimo, Tremendo e Digno, Mestre e Senhor
+Adorado no Universo, a Essência do Amor
+A Estrela da Manhã, Vencedor, Shekinah
+Vem e abraça este lugar
+
+Sinta, igreja, a presença marcante do Noivo
+O amor, a unção e o fogo
+Sinta o toque do Noivo
+Sinta o abraço do Noivo
+
+O Noivo vem, sim, Ele vem pra buscar a noiva
+Que adornada, está preparada
+Para subir ao céu, em glória
+
+O Noivo vem, sim, Ele vem pra buscar a noiva
+Que adornada, está preparada
+Para subir ao céu, em glória
+
+Ele vem, vem, o Noivo vem, sim, Ele vem, aleluia
+
+(Assim como o relâmpago sai do Oriente
+E se mostra até o Ocidente)
+(Assim há de ser a vinda do Noivo
+Para encontrar sua noiva)
+(E a noiva somos nós
+Lavados pelo sangue do Cordeiro)
+(Cidadãos e herdeiros do céu
+Então, prepara-te, Israel)
+(Prepara-te para encontrares com o Senhor, teu Deus)
+(Diga: Maranata, ora vem, Senhor Jesus)
+
+Vem, vem, o Noivo vem, vem, sim, Ele vem, aleluia
+Vem, vem, vem
+
+Vem, Tremendo e Digno, Mestre e Senhor
+Adorado no Universo, a Essência do Amor
+A Estrela da Manhã, Vencedor, Shekinah
+Vem e abraça este lugar
+
+Sinta, igreja, a presença marcante do Noivo
+O amor, a unção e o fogo
+Sinta o toque do Noivo
+Sinta o abraço do Noivo
+Sinta a presença do Noivo
+`,
+      },
+      {
+        titulo: "O Rei Está Voltando",
+        letra: `
+O Rei está voltando, o Rei está voltando
+A trombeta está soando para os santos trasladar
+Sim, o Rei está voltando, o Rei está voltando
+Aleluia, Ele vem nos buscar
+`,
+      },
     ],
   },
 
@@ -453,7 +689,7 @@ Quem é Ele?
       {
         titulo: "Grande é o Senhor",
         letra: `
-[Grupo: Solo]
+[Solo: Adrieli]
 Queremos o Teu nome engrandecer
 E agradecer-Te por Tua obra em nossa vida
 Confiamos em Teu infinito amor
@@ -475,7 +711,7 @@ Confiamos em Teu infinito amor
 Pois só Tu és o Deus eterno
 Sobre toda terra e céus
 
-[Grupo: Solo]
+[Solo: Adrieli]
 A honra
 A glória
 A força
@@ -489,6 +725,17 @@ A glória (a glória)
 A força (a força)
 E o poder ao Rei Jesus
 E o louvor ao Rei Jesus
+
+[Em vozes]
+Porque Ele vive, posso crer no amanhã
+Porque Ele vive, temor não há
+Mas eu bem sei, eu sei que a minha vida
+Está nas mãos do meu Jesus, que vivo está
+
+Porque Ele vive, posso crer no amanhã
+Porque Ele vive, temor não há
+Mas eu bem sei, eu sei que a minha vida
+Está nas mãos do meu Jesus, que vivo está
 `,
       },
       { titulo: "Consagração", letra: "" },
@@ -642,6 +889,65 @@ Ele ressuscitou
   },
 
   "te-adorarei": {
-    partes: [{ titulo: "Te Adorarei", letra: "" }],
+    partes: [{
+      titulo: "Te Adorarei",
+      letra: `
+Contigo eu sei que posso ir além
+Contigo eu não temo a ninguém
+Contigo eu salto uma muralha
+Contigo eu venço uma batalha
+Contigo eu sei que venço o inimigo
+
+Em Ti, eu sei que encontro solução
+Também podes me dar a direção
+Em Ti, eu sei que estou seguro
+Pois já estás no meu futuro
+E Tu já sabes bem o que fazer
+
+Mas se acaso Teu silêncio me alcançar
+E resolveres Te calar para provar a minha fé
+Te adorarei independente do que for
+Pois Tu és Deus, Tu és Senhor
+E fazes o que Te apraz
+
+Eu Te adorarei no mar, no vento ou temporal
+Te adorarei na tempestade, ou na bonança
+Na prova, no fogo, no vale, no monte
+Em meio ao deserto, ou perto da fonte
+Eu só posso mesmo é Te adorar!
+
+Te adorarei, Te adorarei
+Independente do que for, Te adorarei
+Te adorarei, Te adorarei
+Independente do que for, Te adorarei
+
+Grande, justo, lindo, santo
+Forte, torre, rocha, vida
+Manda, pode, cura, livra
+Salva, usa, ressuscita
+Ele tem, Ele é, Ele faz, Ele sabe
+E eu só sei dizer que independente do que for
+Te adorarei
+
+Eu Te adorarei no mar, no vento ou temporal
+Te adorarei na tempestade, ou na bonança
+Na prova, no fogo, no vale, no monte
+Em meio ao deserto, ou perto da fonte
+Eu só posso mesmo é Te adorar!
+
+Grande, justo, lindo, santo
+Forte, torre, rocha, vida
+Manda, pode, cura, livra
+Salva, usa, ressuscita
+Ele tem, Ele é, Ele faz, Ele sabe
+E eu só sei dizer que independente do que for
+Te adorarei
+
+Te adorarei, Te adorarei
+Independente do que for, Te adorarei
+Te adorarei, Te adorarei
+Independente do que for, Te adorarei
+`,
+    }],
   },
 };
