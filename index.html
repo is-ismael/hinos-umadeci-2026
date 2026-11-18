@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hinos UMADECI 2026</title>
+<meta name="description" content="Letras dos hinos do Congresso de Jovens UMADECI 2026">
+<meta name="theme-color" content="#f7f5f1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14151a" media="(prefers-color-scheme: dark)">
+<style>
+  :root {
+    --bg: #f7f5f1;
+    --surface: #ffffff;
+    --ink: #1c1b19;
+    --muted: #6b6760;
+    --line: #e6e2da;
+    --accent: #3d3aa8;
+    --accent-soft: #ecebfa;
+    --shadow: 0 1px 2px rgba(0,0,0,.05), 0 2px 8px rgba(0,0,0,.04);
+    --lyric: 1.15rem;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14151a; --surface: #1d1f26; --ink: #ecebe8; --muted: #9a98a3;
+      --line: #2c2f38; --accent: #a9a7ff; --accent-soft: #272848;
+      --shadow: none; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14151a; --surface: #1d1f26; --ink: #ecebe8; --muted: #9a98a3;
+    --line: #2c2f38; --accent: #a9a7ff; --accent-soft: #272848;
+    --shadow: none; color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  button { font: inherit; color: inherit; }
+
+  /* ---------- Cabeçalho ---------- */
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+    padding-top: env(safe-area-inset-top);
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 0 16px; }
+  .top { display: flex; align-items: center; gap: 12px; padding: 12px 0 10px; }
+  .brand { flex: 1; min-width: 0; }
+  .brand h1 { margin: 0; font-size: 1.15rem; letter-spacing: .02em; line-height: 1.2; }
+  .brand p { margin: 0; font-size: .8rem; color: var(--muted); }
+  .tools { display: flex; gap: 6px; }
+  .tool {
+    min-width: 38px; height: 38px; padding: 0 10px; border-radius: 10px;
+    border: 1px solid var(--line); background: var(--surface); cursor: pointer;
+    font-weight: 600; font-size: .9rem; display: grid; place-items: center;
+  }
+  .tool:active { transform: scale(.96); }
+  .tool svg { width: 18px; height: 18px; }
+
+  .tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; padding: 0 0 10px; }
+  .tab {
+    border: 0; background: transparent; padding: 9px 0; border-radius: 10px;
+    font-weight: 600; color: var(--muted); cursor: pointer;
+  }
+  .tab[aria-selected="true"] { background: var(--accent); color: var(--bg); }
+
+  /* ---------- Conteúdo ---------- */
+  main { padding: 18px 0 48px; }
+  .momento { margin: 0 0 22px; }
+  .momento h2 {
+    margin: 0 0 8px 2px; font-size: .75rem; font-weight: 700;
+    letter-spacing: .1em; text-transform: uppercase; color: var(--muted);
+  }
+
+  details.hino {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 14px; box-shadow: var(--shadow); margin-bottom: 8px;
+    scroll-margin-top: 130px;
+  }
+  details.hino > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  details.hino > summary::-webkit-details-marker { display: none; }
+  .s-txt { flex: 1; min-width: 0; }
+  .s-title { font-weight: 650; font-size: 1.02rem; line-height: 1.3; }
+  .s-title .plus { color: var(--muted); font-weight: 400; }
+  .s-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+  .chip {
+    font-size: .72rem; font-weight: 600; padding: 2px 8px; border-radius: 999px;
+    background: var(--accent-soft); color: var(--accent);
+  }
+  .chip.solo { background: color-mix(in srgb, var(--c) 14%, transparent); color: var(--c); }
+  .chip.pend { background: transparent; color: var(--muted); border: 1px dashed var(--line); }
+  .chev { width: 20px; height: 20px; flex: none; color: var(--muted); transition: transform .2s; }
+  details[open] .chev { transform: rotate(180deg); }
+
+  .letra { padding: 4px 16px 20px; border-top: 1px solid var(--line); }
+  .parte-titulo {
+    display: flex; align-items: center; gap: 8px;
+    margin: 18px 0 4px; font-size: .8rem; font-weight: 700;
+    letter-spacing: .06em; text-transform: uppercase; color: var(--accent);
+  }
+  .parte-titulo .n {
+    width: 20px; height: 20px; border-radius: 50%; display: grid; place-items: center;
+    background: var(--accent); color: var(--bg); font-size: .7rem; letter-spacing: 0;
+  }
+  .estrofe { margin: 14px 0 0; font-size: var(--lyric); line-height: 1.55; }
+  .linha { display: block; }
+  .solo {
+    border-left: 3px solid var(--c); padding-left: 12px; margin-left: -2px;
+    color: var(--c); font-weight: 550;
+  }
+  .solo-tag {
+    display: inline-block; font-size: .7rem; font-weight: 700; letter-spacing: .04em;
+    text-transform: uppercase; color: var(--c); margin-bottom: 2px;
+  }
+  .solo-tag::before { content: "♪ Solo · "; opacity: .75; }
+  .vazio { margin: 14px 0 0; color: var(--muted); font-style: italic; }
+  .fim { text-align: center; color: var(--muted); font-size: .8rem; margin-top: 28px; }
+
+  @media (min-width: 560px) {
+    .brand h1 { font-size: 1.3rem; }
+    .letra { padding: 4px 24px 24px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">
+        <h1>UMADECI 2026</h1>
+        <p>Congresso de Jovens · Letras dos hinos</p>
+      </div>
+      <div class="tools">
+        <button class="tool" id="menos" aria-label="Diminuir letra">A−</button>
+        <button class="tool" id="mais" aria-label="Aumentar letra">A+</button>
+        <button class="tool" id="tema" aria-label="Alternar tema claro/escuro">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav class="tabs" role="tablist" id="tabs"></nav>
+  </div>
+</header>
+
+<main class="wrap" id="conteudo"></main>
+
+<script src="hinos.js"></script>
+<script>
+(function () {
+  var store = {
+    get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+    set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  };
+  var root = document.documentElement;
+  var CHEV = '<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>';
+
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+    });
+  }
+  function slug(s) {
+    return s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  }
+  function cor(nome) { return SOLISTAS[nome] || "#c2410c"; }
+
+  /* Lê a letra: estrofes separadas por linha em branco; **linha** = solo */
+  function lerLetra(texto, soloPadrao) {
+    var estrofes = [], atual = [], bloco = null;
+    (texto || "").split("\n").forEach(function (raw) {
+      var l = raw.trim(), m;
+      if (!l) { if (atual.length) estrofes.push(atual); atual = []; return; }
+      if ((m = l.match(/^\[\s*solo\s*:\s*(.+?)\s*\]$/i))) { bloco = m[1]; return; }
+      if (/^\[\s*todos\s*\]$/i.test(l)) { bloco = null; return; }
+      var cantor = bloco, txt = l;
+      if ((m = l.match(/^\*+\s*(.*?)\s*\*+$/))) { cantor = soloPadrao || bloco || "Solo"; txt = m[1]; }
+      atual.push({ txt: txt, cantor: cantor });
+    });
+    if (atual.length) estrofes.push(atual);
+    return estrofes;
+  }
+
+  function htmlEstrofe(linhas) {
+    var out = "", grupo = null;
+    function fechar() {
+      if (!grupo) return;
+      var ls = grupo.linhas.map(function (t) { return '<span class="linha">' + esc(t) + "</span>"; }).join("");
+      out += grupo.cantor
+        ? '<div class="solo" style="--c:' + cor(grupo.cantor) + '"><span class="solo-tag">' + esc(grupo.cantor) + "</span>" + ls + "</div>"
+        : ls;
+      grupo = null;
+    }
+    linhas.forEach(function (l) {
+      if (!grupo || grupo.cantor !== l.cantor) { fechar(); grupo = { cantor: l.cantor, linhas: [] }; }
+      grupo.linhas.push(l.txt);
+    });
+    fechar();
+    return '<p class="estrofe">' + out + "</p>";
+  }
+
+  function htmlHino(id, grupoNome) {
+    var h = HINOS[id];
+    if (!h) return "";
+    var medley = h.partes.length > 1;
+    var solistas = [], temLetra = false;
+    var corpo = h.partes.map(function (p, i) {
+      var est = lerLetra(p.letra, p.solo);
+      if (est.length) temLetra = true;
+      est.forEach(function (e) { e.forEach(function (l) {
+        if (l.cantor && solistas.indexOf(l.cantor) < 0) solistas.push(l.cantor);
+      }); });
+      var titulo = medley ? '<div class="parte-titulo"><span class="n">' + (i + 1) + "</span>" + esc(p.titulo) + "</div>" : "";
+      var texto = est.length ? est.map(htmlEstrofe).join("") : (h.nota ? "" : '<p class="vazio">Letra em breve.</p>');
+      return titulo + texto;
+    }).join("");
+    if (h.nota) corpo += '<p class="vazio">' + esc(h.nota) + "</p>";
+
+    var titulo = h.partes.map(function (p) { return esc(p.titulo); }).join(' <span class="plus">+</span> ');
+    var chips = "";
+    if (medley) chips += '<span class="chip">Medley</span>';
+    solistas.forEach(function (s) {
+      chips += '<span class="chip solo" style="--c:' + cor(s) + '">Solo · ' + esc(s) + "</span>";
+    });
+    if (!temLetra && !h.aviso) chips += '<span class="chip pend">Letra em breve</span>';
+
+    return '<details class="hino" name="' + grupoNome + '" id="' + id + '">' +
+      "<summary><div class=\"s-txt\"><div class=\"s-title\">" + titulo + "</div>" +
+      (chips ? '<div class="s-meta">' + chips + "</div>" : "") + "</div>" + CHEV + "</summary>" +
+      '<div class="letra">' + corpo + "</div></details>";
+  }
+
+  /* ---------- Dias ---------- */
+  var tabs = document.getElementById("tabs");
+  var main = document.getElementById("conteudo");
+
+  function mostrarDia(i, salvar) {
+    var d = PROGRAMACAO[i];
+    Array.prototype.forEach.call(tabs.children, function (b, j) { b.setAttribute("aria-selected", j === i); });
+    main.innerHTML = d.momentos.map(function (m) {
+      return '<section class="momento"><h2>' + esc(m.nome) + "</h2>" +
+        m.hinos.map(function (id) { return htmlHino(id, "dia-" + i); }).join("") + "</section>";
+    }).join("") + '<p class="fim">Toque no hino para abrir a letra</p>';
+    if (salvar) { store.set("dia", i); history.replaceState(null, "", "#" + slug(d.dia)); }
+    window.scrollTo(0, 0);
+  }
+
+  PROGRAMACAO.forEach(function (d, i) {
+    var b = document.createElement("button");
+    b.className = "tab"; b.setAttribute("role", "tab"); b.textContent = d.dia;
+    b.onclick = function () { mostrarDia(i, true); };
+    tabs.appendChild(b);
+  });
+
+  /* Abre um hino por vez e rola até ele */
+  main.addEventListener("toggle", function (e) {
+    var el = e.target;
+    if (!el.open) return;
+    main.querySelectorAll("details.hino[open]").forEach(function (o) { if (o !== el) o.open = false; });
+    setTimeout(function () { el.scrollIntoView({ behavior: "smooth", block: "start" }); }, 30);
+  }, true);
+
+  /* Dia inicial: link (#sabado) > dia da semana > último visto > sexta */
+  var inicial = 0;
+  var hash = location.hash.slice(1);
+  var porHash = PROGRAMACAO.findIndex(function (d) { return slug(d.dia) === hash; });
+  var semana = { 5: 0, 6: 1, 0: 2 }[new Date().getDay()];
+  if (porHash >= 0) inicial = porHash;
+  else if (semana !== undefined) inicial = semana;
+  else if (store.get("dia") !== null && PROGRAMACAO[+store.get("dia")]) inicial = +store.get("dia");
+  mostrarDia(inicial, false);
+
+  /* ---------- Tamanho da letra e tema ---------- */
+  var tam = parseFloat(store.get("tam")) || 1.15;
+  function aplicarTam() { root.style.setProperty("--lyric", tam + "rem"); store.set("tam", tam); }
+  aplicarTam();
+  document.getElementById("mais").onclick = function () { tam = Math.min(2, +(tam + 0.1).toFixed(2)); aplicarTam(); };
+  document.getElementById("menos").onclick = function () { tam = Math.max(0.9, +(tam - 0.1).toFixed(2)); aplicarTam(); };
+
+  var tema = store.get("tema");
+  if (tema) root.setAttribute("data-theme", tema);
+  document.getElementById("tema").onclick = function () {
+    var escuro = root.getAttribute("data-theme") === "dark" ||
+      (!root.getAttribute("data-theme") && matchMedia("(prefers-color-scheme: dark)").matches);
+    tema = escuro ? "light" : "dark";
+    root.setAttribute("data-theme", tema); store.set("tema", tema);
+  };
+})();
+</script>
+</body>
+</html>
