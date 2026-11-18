@@ -745,6 +745,11 @@ A glória
 A força
 E o poder ao Rei Jesus
 E o louvor ao Rei Jesus
+
+Porque Ele vive, posso crer no amanhã
+Porque Ele vive, temor não há
+Mas eu bem sei, eu sei que a minha vida
+Está nas mãos do meu Jesus, que vivo está
 `,
       },
     ],
