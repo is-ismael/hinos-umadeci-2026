@@ -34,7 +34,6 @@ const SOLISTAS = {
   "Adrieli":      "#2f9e44",
   "Larissa Dias": "#0c8599",
   "Masculino":    "#1c7ed6",
-  "Feminino":     "#5c940d",
   "Solo":         "#c92a2a",
   "Solo 1":       "#c92a2a",
   "Sara":         "#2b8a3e",
@@ -487,7 +486,6 @@ Seu poder, Seu amor
         titulo: "Abraço do Noivo",
         solo: "Júlia",
         letra: `
-[Solo: Feminino]
 Quantas vezes na Terra
 Afligida e humilhada, a noiva sofreu?
 Calada, foi aprisionada
@@ -497,8 +495,6 @@ Cada lágrima da igreja, o Noivo colhia
 E esse cuidado cada vez mais crescia
 E a noiva sabia
 Que o encontro dos séculos aconteceria
-[Todos]
-[Solista: Júlia]
 
 *E o Noivo no céu, contemplando o paraíso*
 *Pra encontrar sua noiva e lhe dar o infinito*
