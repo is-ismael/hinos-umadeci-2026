@@ -524,9 +524,11 @@ Vai romper o infinito e abraçar a Jesus
 Vai receber coroa em troca da cruz
 Para sempre, para sempre
 
+[Solo: Gabriela]
 E nada jamais quebrará a aliança
 Para sempre a igreja é santa
 Para adorar o Rei, o meu Rei
+[Todos]
 
 O Altíssimo, Tremendo e Digno, Mestre e Senhor
 Adorado no Universo, a Essência do Amor
@@ -538,9 +540,11 @@ O amor, a unção e o fogo
 Sinta o toque do Noivo
 Sinta o abraço do Noivo
 
+[Solo: Gabriela]
 O Noivo vem, sim, Ele vem pra buscar a noiva
 Que adornada, está preparada
 Para subir ao céu, em glória
+[Todos]
 
 O Noivo vem, sim, Ele vem pra buscar a noiva
 Que adornada, está preparada
@@ -548,6 +552,7 @@ Para subir ao céu, em glória
 
 Ele vem, vem, o Noivo vem, sim, Ele vem, aleluia
 
+[Solo: Tayná]
 (Assim como o relâmpago sai do Oriente
 E se mostra até o Ocidente)
 (Assim há de ser a vinda do Noivo
@@ -558,6 +563,7 @@ Lavados pelo sangue do Cordeiro)
 Então, prepara-te, Israel)
 (Prepara-te para encontrares com o Senhor, teu Deus)
 (Diga: Maranata, ora vem, Senhor Jesus)
+[Todos]
 
 Vem, vem, o Noivo vem, vem, sim, Ele vem, aleluia
 Vem, vem, vem
