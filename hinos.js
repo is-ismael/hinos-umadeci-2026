@@ -77,6 +77,7 @@ const HINOS = {
     partes: [{
       titulo: "Um Novo Dia",
       letra: `
+[Solo: Masculino]
 Pela graça estou sendo curado
 Pouco a pouco sendo transformado
 Perfeito não sou, contudo, sou grato
@@ -84,6 +85,7 @@ Perfeito não sou, contudo, sou grato
 Tenho lutas, mas eu não desisto
 Com coragem, sigo vencendo
 Perfeito não sou, contudo, sou grato
+[Todos]
 
 Novo dia recebi
 Pra Te amar, ó Deus
@@ -158,10 +160,12 @@ Recebi, recebi
     partes: [{
       titulo: "Gratidão",
       letra: `
+[Solo: Masculino]
 Nada novo achei pra dizer, então
 Como expressar minha gratidão?
 Posso até cantar alguma canção
 Que vai acabar, mas a Sua não
+[Todos]
 
 Então, vou levantar as minhas mãos e louvar
 Pois tudo o que tenho é um aleluia, aleluia
