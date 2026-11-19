@@ -120,10 +120,12 @@ Sou grato, Cristo
 Novo dia recebi, recebi
 Recebi, recebi
 
+[Solo: Masculino]
 Meu Senhor, eu só quero adorá-Lo
 Tu és tudo, és tudo, és tudo para mim
 Meu Senhor, eu só quero adorá-Lo
 Tu és tudo, és tudo, és tudo para mim
+[Todos]
 
 Meu Senhor, eu só quero adorá-Lo
 Tu és tudo, és tudo, és tudo
