@@ -124,11 +124,12 @@
   .solo-tag::before { content: "♪ "; }
   .tags { display: flex; flex-wrap: wrap; gap: 0 12px; }
   .inl { color: var(--c); font-weight: 650; }
-  /* voz principal: mesma cor da pessoa, mas tracejado e mais leve que o solo */
-  .solo.principal { border-left-style: dashed; font-weight: 500; }
-  .inl.principal { font-weight: 550; }
+  /* voz principal: discreto — letra na cor normal, só uma linha fina pontilhada e etiqueta cinza */
+  .solo.principal { border-left: 2px dotted var(--line); padding-left: 13px; color: var(--ink); font-weight: 400; }
+  .inl.principal { color: var(--ink); font-weight: 400; }
+  .solo-tag.principal { color: var(--muted); font-weight: 600; }
   .solo-tag.principal::before { content: "♫ "; }
-  .chip.solo.principal { box-shadow: none; border: 1px dashed var(--c); padding: 1px 7px; }
+  .chip.solo.principal { box-shadow: none; border: 1px dotted var(--line); padding: 1px 7px; color: var(--muted); }
   .eco { color: var(--ink); font-weight: 400; }
   .nota {
     display: block; font-size: .72rem; font-weight: 700; letter-spacing: .06em;
