@@ -124,6 +124,11 @@
   .solo-tag::before { content: "♪ "; }
   .tags { display: flex; flex-wrap: wrap; gap: 0 12px; }
   .inl { color: var(--c); font-weight: 650; }
+  /* voz principal: mesma cor da pessoa, mas tracejado e mais leve que o solo */
+  .solo.principal { border-left-style: dashed; font-weight: 500; }
+  .inl.principal { font-weight: 550; }
+  .solo-tag.principal::before { content: "♫ "; }
+  .chip.solo.principal { box-shadow: none; border: 1px dashed var(--c); padding: 1px 7px; }
   .eco { color: var(--ink); font-weight: 400; }
   .nota {
     display: block; font-size: .72rem; font-weight: 700; letter-spacing: .06em;
@@ -178,7 +183,10 @@
   function slug(s) {
     return s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   }
-  function cor(nome) { return SOLISTAS[nome] || "#c2410c"; }
+  var VP = "Voz principal · "; /* prefixo de quem canta a voz principal (os demais cantam junto, em outras vozes) */
+  function ehVP(nome) { return nome.indexOf(VP) === 0; }
+  function cor(nome) { return SOLISTAS[ehVP(nome) ? nome.slice(VP.length) : nome] || "#c2410c"; }
+  function cls(nome) { return ehVP(nome) ? " principal" : ""; }
 
   /* Divide uma linha em trechos; *trecho* = solo de quem estiver cantando */
   function trechos(txt, cantor) {
@@ -202,6 +210,10 @@
     (texto || "").split("\n").forEach(function (raw) {
       var l = raw.trim(), m;
       if (!l) { if (atual.length) estrofes.push(atual); atual = []; return; }
+      if ((m = l.match(/^\[\s*voz\s+principal\s*:\s*(.+?)\s*\]$/i))) {
+        atualSolista = VP + m[1]; /* os *asteriscos* passam a ser voz principal */
+        return;
+      }
       if ((m = l.match(/^\[\s*(solo|grupo|solista)\s*:\s*(.+?)\s*\]$/i))) {
         var tipo = m[1].toLowerCase();
         atualSolista = m[2];
@@ -218,14 +230,14 @@
     return estrofes;
   }
 
-  function rotulo(nome) { return TIPO[nome] === "grupo" || /^solo\b/i.test(nome) ? nome : "Solo · " + nome; }
-  function tag(nome) { return '<span class="solo-tag" style="--c:' + cor(nome) + '">' + esc(rotulo(nome)) + "</span>"; }
+  function rotulo(nome) { return ehVP(nome) || TIPO[nome] === "grupo" || /^solo\b/i.test(nome) ? nome : "Solo · " + nome; }
+  function tag(nome) { return '<span class="solo-tag' + cls(nome) + '" style="--c:' + cor(nome) + '">' + esc(rotulo(nome)) + "</span>"; }
 
   function htmlLinha(l) {
     return '<span class="linha">' + l.segs.map(function (s) {
       if (l.cantor !== undefined) return esc(s.t);
       return s.c
-        ? '<span class="inl" style="--c:' + cor(s.c) + '">' + esc(s.t) + "</span>"
+        ? '<span class="inl' + cls(s.c) + '" style="--c:' + cor(s.c) + '">' + esc(s.t) + "</span>"
         : '<span class="eco">' + esc(s.t) + "</span>";
     }).join("") + "</span>";
   }
@@ -261,7 +273,7 @@
       var ls = grupo.linhas.map(htmlLinha).join("");
       if (grupo.k.indexOf("s:") === 0) {
         var nome = grupo.k.slice(2);
-        out += '<div class="solo" style="--c:' + cor(nome) + '">' + tag(nome) + ls + "</div>";
+        out += '<div class="solo' + cls(nome) + '" style="--c:' + cor(nome) + '">' + tag(nome) + ls + "</div>";
       } else out += ls;
       grupo = null;
     }
@@ -302,7 +314,7 @@
     var chips = "";
     if (medley) chips += '<span class="chip">Medley</span>';
     solistas.forEach(function (s) {
-      chips += '<span class="chip solo" style="--c:' + cor(s) + '">' + esc(rotulo(s)) + "</span>";
+      chips += '<span class="chip solo' + cls(s) + '" style="--c:' + cor(s) + '">' + esc(rotulo(s)) + "</span>";
     });
     if (!temLetra && !h.aviso) chips += '<span class="chip pend">Letra em breve</span>';
 

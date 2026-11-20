@@ -16,6 +16,9 @@
      (depois do [Todos], os *asteriscos* continuam sendo dessa pessoa)
    - Trocar de quem são os *asteriscos* no meio do hino, sem colorir
      a estrofe inteira:  [Solista: Nome da Pessoa]
+   - Voz principal (a pessoa puxa, os demais cantam junto em outras
+     vozes): [Voz principal: Nome da Pessoa] — a partir dali os
+     *asteriscos* aparecem como voz principal, não como solo.
    - Grupo que não é solo (ex.: só as mulheres):
          [Grupo: Mulheres]  ...  [Todos]
    - Qualquer outra coisa entre [colchetes] vira uma indicação
@@ -909,13 +912,15 @@ Ele ressuscitou
   "te-adorarei": {
     partes: [{
       titulo: "Te Adorarei",
-      solo: "Larissa Dias",
       letra: `
-*Contigo eu sei que posso ir além*
-*Contigo eu não temo a ninguém*
-*Contigo eu salto uma muralha*
-*Contigo eu venço uma batalha*
-*Contigo eu sei que venço o inimigo*
+[Solo: Larissa Dias]
+Contigo eu sei que posso ir além
+Contigo eu não temo a ninguém
+Contigo eu salto uma muralha
+Contigo eu venço uma batalha
+Contigo eu sei que venço o inimigo
+[Todos]
+[Voz principal: Larissa Dias]
 
 *Em Ti, eu sei que encontro solução*
 *Também podes me dar a direção*
